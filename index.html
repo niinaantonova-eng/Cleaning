@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CleanPro — Профессиональный клининг</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+body{background:#f5f7fa;color:#222}
+.container{max-width:1200px;margin:auto;padding:20px}
+header{background:#1e88e5;color:#fff;padding:60px 20px;text-align:center}
+header h1{font-size:42px;margin-bottom:15px}
+header p{font-size:18px;margin-bottom:25px}
+.btn{display:inline-block;background:#fff;color:#1e88e5;padding:12px 25px;border-radius:30px;text-decoration:none;font-weight:600;transition:0.3s}
+.btn:hover{background:#1565c0;color:#fff}
+section{padding:60px 20px}
+h2{text-align:center;margin-bottom:40px;font-size:32px}
+.services,.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card,.step{background:#fff;padding:25px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.08);transition:0.3s;text-align:center}
+.card:hover,.step:hover{transform:translateY(-5px)}
+.card h3{margin-bottom:15px}
+.price{color:#1e88e5;font-weight:700;margin-top:10px}
+.step-number{font-size:40px;font-weight:700;color:#1e88e5;margin-bottom:10px}
+.advantages{display:flex;flex-wrap:wrap;gap:20px;justify-content:center}
+.adv{background:#fff;padding:20px 30px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.08)}
+.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.review{background:#fff;padding:25px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.08)}
+form{max-width:500px;margin:auto;display:flex;flex-direction:column;gap:15px}
+input,textarea{padding:12px;border-radius:8px;border:1px solid #ccc}
+button{padding:12px;border:none;border-radius:30px;background:#1e88e5;color:#fff;font-weight:600;cursor:pointer}
+button:hover{background:#1565c0}
+footer{background:#222;color:#fff;text-align:center;padding:20px;margin-top:40px}
+@media(max-width:600px){
+header h1{font-size:30px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>CleanPro</h1>
+<p>Профессиональная уборка квартир, домов и офисов</p>
+<a href="#contact" class="btn">Заказать уборку</a>
+</header>
+
+<section>
+<div class="container">
+<h2>Наши услуги</h2>
+<div class="services">
+<div class="card">
+<h3>Уборка квартиры</h3>
+<p>Генеральная и поддерживающая уборка</p>
+<div class="price">от 100 eur</div>
+</div>
+<div class="card">
+<h3>Уборка после ремонта</h3>
+<p>Удаление строительной пыли и загрязнений</p>
+<div class="price">от 550 eur</div>
+</div>
+<div class="card">
+<h3>Мытьё окон</h3>
+<p>Чистые окна без разводов</p>
+<div class="price">от 50 eur</div>
+</div>
+</div>
+</div>
+</section>
+
+<section style="background:#eef3f8">
+<div class="container">
+<h2>Почему выбирают нас</h2>
+<div class="advantages">
+<div class="adv">✔ Опытные сотрудники</div>
+<div class="adv">✔ Эко-средства</div>
+<div class="adv">✔ Гарантия качества</div>
+<div class="adv">✔ Работаем 24/7</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2>Как мы работаем</h2>
+<div class="steps">
+<div class="step">
+<div class="step-number">1</div>
+<h3>Оставляете заявку</h3>
+<p>Через сайт или по телефону</p>
+</div>
+<div class="step">
+<div class="step-number">2</div>
+<h3>Подтверждаем заказ</h3>
+<p>Согласовываем время и стоимость</p>
+</div>
+<div class="step">
+<div class="step-number">3</div>
+<h3>Выполняем уборку</h3>
+<p>Приезжаем вовремя и наводим порядок</p>
+</div>
+<div class="step">
+<div class="step-number">4</div>
+<h3>Вы принимаете работу</h3>
+<p>Оплата только после результата</p>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2>Отзывы клиентов</h2>
+<div class="reviews">
+<div class="review">
+<p>"Очень качественная уборка, всё блестит!"</p>
+<strong>— Анна</strong>
+</div>
+<div class="review">
+<p>"Приехали вовремя, сделали быстро и аккуратно."</p>
+<strong>— Дмитрий</strong>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact" style="background:#eef3f8">
+<div class="container">
+<h2>Оставить заявку</h2>
+<form>
+<input type="text" placeholder="Ваше имя" required>
+<input type="tel" placeholder="Телефон" required>
+<textarea placeholder="Комментарий"></textarea>
+<button type="submit">Отправить заявку</button>
+</form>
+</div>
+</section>
+
+<footer>
+<p>© 2026 CleanPro | Все права защищены</p>
+</footer>
+
+</body>
+</html>
